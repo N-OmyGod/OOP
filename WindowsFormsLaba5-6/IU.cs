@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsLaba5_6
 {
-    class IU
+    class IContainer
     {
-     
-        public virtual void add(string fn, int n, int nz, int c, string fbeg) { }
         public virtual void search() { }
     }
 }

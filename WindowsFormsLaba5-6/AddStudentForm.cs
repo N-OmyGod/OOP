@@ -12,33 +12,30 @@ namespace WindowsFormsLaba5_6
 {
     public partial class AddStudentForm : Form
     {
-        Hostel b = new Hostel();
+        
         public AddStudentForm()
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        // обработка нажатия кнопки добавить
+        private void addButton_Click(object sender, EventArgs e)
         {
-            string sn = textBox1.Text;
+            ContainerDictionary b = new ContainerDictionary();
+            //считываем даннные с формы
+            string fullName = textBox1.Text;
             string group = textBox2.Text;
-            string n = textBox3.Text;
-            string l_y = textBox4.Text;
-            int nr=Convert.ToInt32(n);
-            int l_y1 = Convert.ToInt32(l_y);
-            b.add(sn,group,nr,l_y1);
+            int nroom = Convert.ToInt32(textBox3.Text);
+            int last_y = Convert.ToInt32(textBox4.Text);
+
+            //вызываем метод добавления обьекта в cловарь
+            b.add(fullName, group, nroom, last_y);
+            //после добавления закрываем форму
             this.Visible = false;
             var form1 = new Form1();
             form1.Show();
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-           
-            this.Visible = false;
-            var form1 = new Form1();
-            form1.Show();
-        }
+     
     }
 }

@@ -59,6 +59,8 @@
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Cinema.cs" />
+    <Compile Include="ContainerDictionary.cs" />
+    <Compile Include="ContainerList.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

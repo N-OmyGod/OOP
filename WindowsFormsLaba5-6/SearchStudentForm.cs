@@ -12,27 +12,29 @@ namespace WindowsFormsLaba5_6
 {
     public partial class SearchStudentForm : Form
     {
-        Hostel b = new Hostel();
+        
         public SearchStudentForm()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        // обработка нажатия кнопки поиск
+        private void searchButton_Click(object sender, EventArgs e)
         {
-            string group = textBox1.Text;
-            string l_y = textBox2.Text;
-
-            int l_y1 = Convert.ToInt32(l_y);
-            var c = b.search(group, l_y1);
-            foreach (string s in c)
+            ContainerDictionary b = new ContainerDictionary();
+           b.search_gr = textBox1.Text;//заданная группа
+           b.search_y = Convert.ToInt32(textBox2.Text);// заданный год
+           b.search(); // поиск
+            foreach (string s in b.foundValue) // выводим в текстбокс студентов из листа foundValue 
             {
-
-                listBox1.Items.Add(s);
+                Null.Items.Add(s);
             }
            
         }
-        private void button2_Click(object sender, EventArgs e)
+
+        // обработка нажатия кнопки назад
+        private void backButton_Click(object sender, EventArgs e)
         {
             this.Visible = false;
             var form1 = new Form1();

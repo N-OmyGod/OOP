@@ -12,7 +12,7 @@ namespace WindowsFormsLaba5_6
 {
     public partial class AddCinemaForm : Form
     {
-        Cinema a = new Cinema();
+        
         public AddCinemaForm()
         {
             InitializeComponent();
@@ -20,23 +20,21 @@ namespace WindowsFormsLaba5_6
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string n = textBox1.Text;
-            string nums = textBox2.Text;
-            string nz = textBox3.Text;
-            string price = textBox4.Text;
-            string begs = textBox5.Text;
-            int nr = Convert.ToInt32(nums);
-            int nn = Convert.ToInt32(nz);
-            int p = Convert.ToInt32(price);
-            a.add(n, nr,nn,p,begs);
+            ContainerList a = new ContainerList();
+           //считываем даннные с формы
+            string name = textBox1.Text;
+            int fullCount = Convert.ToInt32(textBox2.Text);
+            int count = Convert.ToInt32(textBox3.Text);
+            int price = Convert.ToInt32(textBox4.Text);
+            string beg = textBox5.Text;
+       
+            //вызываем метод добавления обьекта в лист
+            a.add(name, fullCount, count, price, beg);
+            //после добавления закрываем форму
             this.Visible = false;
             var form1 = new Form1();
             form1.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

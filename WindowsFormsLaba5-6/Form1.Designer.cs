@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.searchFilm = new System.Windows.Forms.Button();
-            this.addFilm = new System.Windows.Forms.Button();
-            this.searchStudent = new System.Windows.Forms.Button();
-            this.addStudent = new System.Windows.Forms.Button();
+            this.searchFilmButton = new System.Windows.Forms.Button();
+            this.addFilmButton = new System.Windows.Forms.Button();
+            this.searchStudentButton = new System.Windows.Forms.Button();
+            this.addStudentButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.closeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,49 +48,49 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Выберите класс для работы и соответствующую операцию";
             // 
-            // searchFilm
+            // searchFilmButton
             // 
-            this.searchFilm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.searchFilm.Location = new System.Drawing.Point(108, 216);
-            this.searchFilm.Name = "searchFilm";
-            this.searchFilm.Size = new System.Drawing.Size(225, 57);
-            this.searchFilm.TabIndex = 5;
-            this.searchFilm.Text = "Узнать заполненность  зала";
-            this.searchFilm.UseVisualStyleBackColor = true;
-            this.searchFilm.Click += new System.EventHandler(this.searchFilm_Click);
+            this.searchFilmButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.searchFilmButton.Location = new System.Drawing.Point(108, 216);
+            this.searchFilmButton.Name = "searchFilmButton";
+            this.searchFilmButton.Size = new System.Drawing.Size(225, 57);
+            this.searchFilmButton.TabIndex = 5;
+            this.searchFilmButton.Text = "Узнать заполненность  зала";
+            this.searchFilmButton.UseVisualStyleBackColor = true;
+            this.searchFilmButton.Click += new System.EventHandler(this.searchFilm_Click);
             // 
-            // addFilm
+            // addFilmButton
             // 
-            this.addFilm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addFilm.Location = new System.Drawing.Point(101, 126);
-            this.addFilm.Name = "addFilm";
-            this.addFilm.Size = new System.Drawing.Size(232, 47);
-            this.addFilm.TabIndex = 4;
-            this.addFilm.Text = "Добавить фильм";
-            this.addFilm.UseVisualStyleBackColor = true;
-            this.addFilm.Click += new System.EventHandler(this.addFilm_Click);
+            this.addFilmButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addFilmButton.Location = new System.Drawing.Point(101, 126);
+            this.addFilmButton.Name = "addFilmButton";
+            this.addFilmButton.Size = new System.Drawing.Size(232, 47);
+            this.addFilmButton.TabIndex = 4;
+            this.addFilmButton.Text = "Добавить фильм";
+            this.addFilmButton.UseVisualStyleBackColor = true;
+            this.addFilmButton.Click += new System.EventHandler(this.addFilm_Click);
             // 
-            // searchStudent
+            // searchStudentButton
             // 
-            this.searchStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.searchStudent.Location = new System.Drawing.Point(595, 216);
-            this.searchStudent.Name = "searchStudent";
-            this.searchStudent.Size = new System.Drawing.Size(220, 57);
-            this.searchStudent.TabIndex = 8;
-            this.searchStudent.Text = " Информация о студенте";
-            this.searchStudent.UseVisualStyleBackColor = true;
-            this.searchStudent.Click += new System.EventHandler(this.searchStudent_Click);
+            this.searchStudentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.searchStudentButton.Location = new System.Drawing.Point(595, 216);
+            this.searchStudentButton.Name = "searchStudentButton";
+            this.searchStudentButton.Size = new System.Drawing.Size(220, 57);
+            this.searchStudentButton.TabIndex = 8;
+            this.searchStudentButton.Text = " Информация о студенте";
+            this.searchStudentButton.UseVisualStyleBackColor = true;
+            this.searchStudentButton.Click += new System.EventHandler(this.searchStudent_Click);
             // 
-            // addStudent
+            // addStudentButton
             // 
-            this.addStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addStudent.Location = new System.Drawing.Point(595, 126);
-            this.addStudent.Name = "addStudent";
-            this.addStudent.Size = new System.Drawing.Size(220, 47);
-            this.addStudent.TabIndex = 7;
-            this.addStudent.Text = "Добавить студента ";
-            this.addStudent.UseVisualStyleBackColor = true;
-            this.addStudent.Click += new System.EventHandler(this.addStudent_Click);
+            this.addStudentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addStudentButton.Location = new System.Drawing.Point(595, 126);
+            this.addStudentButton.Name = "addStudentButton";
+            this.addStudentButton.Size = new System.Drawing.Size(220, 47);
+            this.addStudentButton.TabIndex = 7;
+            this.addStudentButton.Text = "Добавить студента ";
+            this.addStudentButton.UseVisualStyleBackColor = true;
+            this.addStudentButton.Click += new System.EventHandler(this.addStudent_Click);
             // 
             // label2
             // 
@@ -111,18 +112,29 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Общежитие";
             // 
+            // closeButton
+            // 
+            this.closeButton.Location = new System.Drawing.Point(406, 361);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(140, 33);
+            this.closeButton.TabIndex = 13;
+            this.closeButton.Text = "Закрыть";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(925, 428);
+            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.searchStudent);
-            this.Controls.Add(this.addStudent);
-            this.Controls.Add(this.searchFilm);
-            this.Controls.Add(this.addFilm);
+            this.Controls.Add(this.searchStudentButton);
+            this.Controls.Add(this.addStudentButton);
+            this.Controls.Add(this.searchFilmButton);
+            this.Controls.Add(this.addFilmButton);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -133,12 +145,13 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button searchFilm;
-        private System.Windows.Forms.Button addFilm;
-        private System.Windows.Forms.Button searchStudent;
-        private System.Windows.Forms.Button addStudent;
+        private System.Windows.Forms.Button searchFilmButton;
+        private System.Windows.Forms.Button addFilmButton;
+        private System.Windows.Forms.Button searchStudentButton;
+        private System.Windows.Forms.Button addStudentButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button closeButton;
     }
 }
 

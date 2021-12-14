@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.searchButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.backButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Null = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // button1
+            // searchButton
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(359, 538);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 49);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Поиск";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.searchButton.Location = new System.Drawing.Point(359, 538);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(91, 49);
+            this.searchButton.TabIndex = 0;
+            this.searchButton.Text = "Поиск";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // label1
             // 
@@ -96,15 +96,15 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Введите данные о студенте";
             // 
-            // button2
+            // backButton
             // 
-            this.button2.Location = new System.Drawing.Point(787, 545);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 38);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Назад";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.backButton.Location = new System.Drawing.Point(787, 545);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(96, 38);
+            this.backButton.TabIndex = 23;
+            this.backButton.Text = "Назад";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // label3
             // 
@@ -116,16 +116,16 @@
             this.label3.TabIndex = 26;
             this.label3.Text = "Студент";
             // 
-            // listBox1
+            // Null
             // 
-            this.listBox1.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 26;
-            this.listBox1.Location = new System.Drawing.Point(66, 316);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(552, 160);
-            this.listBox1.TabIndex = 27;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.Null.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Null.FormattingEnabled = true;
+            this.Null.ItemHeight = 26;
+            this.Null.Location = new System.Drawing.Point(66, 316);
+            this.Null.Name = "Null";
+            this.Null.Size = new System.Drawing.Size(552, 160);
+            this.Null.TabIndex = 27;
+            this.Null.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // SearchStudentForm
             // 
@@ -133,15 +133,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(950, 621);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.Null);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.searchButton);
             this.Name = "SearchStudentForm";
             this.Text = "SearchStudentForm";
             this.ResumeLayout(false);
@@ -151,14 +151,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox Null;
     }
 }
