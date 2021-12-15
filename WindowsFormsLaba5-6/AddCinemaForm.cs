@@ -36,5 +36,13 @@ namespace WindowsFormsLaba5_6
             form1.Show();
         }
 
+     
+        private void backButton_Click_1(object sender, EventArgs e)
+        {
+
+            this.Visible = false;
+            var form1 = new Form1();
+            form1.Show();
+        }
     }
 }

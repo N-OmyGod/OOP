@@ -43,7 +43,7 @@ namespace WindowsFormsLaba5_6
 
         private void SearchFilmForm_Load(object sender, EventArgs e)
         {
-            this.Visible = true;
+          
         }
     }
 }
