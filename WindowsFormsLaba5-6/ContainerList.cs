@@ -35,7 +35,7 @@ namespace WindowsFormsLaba5_6
 					double b = p.numViewers; // занятые места 
 					double c = b / (a / 100); 
 					percent=(int)c;
-					break;
+					
 				}
 
 

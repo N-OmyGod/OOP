@@ -44,7 +44,7 @@
             this.backButton.TabIndex = 30;
             this.backButton.Text = "Назад";
             this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            this.backButton.Click += new System.EventHandler(this.back1Button_Click);
             // 
             // label2
             // 
@@ -73,7 +73,7 @@
             this.searchButton.TabIndex = 24;
             this.searchButton.Text = "Вывести";
             this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.backButton_Click);
+            this.searchButton.Click += new System.EventHandler(this.search1Button_Click);
             // 
             // textBox2
             // 
@@ -82,7 +82,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(195, 31);
             this.textBox2.TabIndex = 31;
-            this.textBox2.TextChanged += new System.EventHandler(this.searchButton_Click);
+           // this.textBox2.TextChanged += new System.EventHandler(this.);
             // 
             // label1
             // 
